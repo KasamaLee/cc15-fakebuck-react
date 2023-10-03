@@ -12,14 +12,14 @@ export default function Dropdown() {
 
     const dropDownEl = useRef(null); //{ current: null }
     //  dropDownEl { current: object <div class='relative'></div> }
-    console.log('after use ref', dropDownEl);
+    // console.log('after use ref', dropDownEl);
 
     const { logout, authUser } = useAuth(); 
     // authUser = {id, firstName, lastName, profileImage, coverImage}
 
     useEffect(() => {
         const handleClickOutside = (e) => {
-            console.log(e)
+            // console.log(e)
             if (!dropDownEl.current.contains(e.target)) {
                 setIsOpen(false);
             }

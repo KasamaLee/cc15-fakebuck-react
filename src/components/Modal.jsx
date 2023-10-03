@@ -12,11 +12,11 @@ export default function Modal({ title, children, maxWidth = 27, open, onClose })
                         <div className="flex justify-center items-center min-h-full p-4">
                             <div
                                 className="rounded-lg w-full bg-white shadow-2xl border"
-                                style={{ maxWidth: `${maxWidth} rem` }}
+                                style={{ maxWidth: `${maxWidth}rem` }}
                             >
                                 <div className="flex justify-between p-4 text-xl border-b">
                                     <div className="invisible">X</div>
-                                    <div className="font-bold">Sign Up</div>
+                                    <div className="font-bold">{title}</div>
                                     <div className="text-gray-500 cursor-pointer" onClick={onClose}>X</div>
                                 </div>
                                 <div className="p-4"> {children}</div>

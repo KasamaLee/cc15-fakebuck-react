@@ -1,13 +1,13 @@
 import defaultImage from '../assets/blank.png'
 
-export default function Avatar({ className='h-10' }) {
+export default function Avatar({ className='h-10', src = defaultImage }) {
 
-    const defaultClass = 'rounded-full aspect-square';
+    const defaultClass = 'rounded-full aspect-square object-cover';
     const classes = defaultClass + ' ' + className;
 
     return (
         <img
-            src={defaultImage}
+            src={src}
             alt="user"
             className={classes}
         />
